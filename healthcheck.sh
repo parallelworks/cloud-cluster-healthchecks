@@ -2,7 +2,7 @@
 
 # Until we can read a config, set vars here
 HEALTH_LOG_FILE=/tmp/healthcheck.log
-HEALTH_CHECKS=(check_services check_ssh check_lustre)
+HEALTH_CHECKS=(check_services check_lustre)
 
 # Get the node's type. Certain checks only run on certain nodes.
 export HOSTNAME="$(hostname)"
