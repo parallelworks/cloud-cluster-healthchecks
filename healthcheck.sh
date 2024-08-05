@@ -7,7 +7,7 @@ HEALTH_CHECKS=(check_services check_ssh check_lustre)
 # Get the node's type. Certain checks only run on certain nodes.
 export HOSTNAME="$(hostname)"
 NODE_TYPE=""
-if [[ $HOSTNAME == mgmt* ]]; then
+if [[ $HOSTNAME == *mgmt* ]]; then
   NODE_TYPE="controller"
 else
   NODE_TYPE="compute"
